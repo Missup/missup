@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>missup</title>
+  <link rel="stylesheet" type="text/css" href="https://mipcache.bdstatic.com/static/v1/mip.css">
+  <!-- 站点名称 -->
+  <link rel="canonical" href="https://m.missup.com/mip">
+  <style mip-custom>
+  @import url(../static/common.css);
+  .index-title {
+    height: 50px;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 30px;
+    position: relative;
+  }
+  .index-title span {
+    position: absolute;
+    width: 10px;
+    height: 28px;
+    background: #009393;
+    left: 0;
+    top: 11px;
+  }
+  /* nav */
+  mip-fixed[type="top"] {
+    height: 100px;
+    line-height: 100px;
+    /* background-color: #009393; */
+    background-color: #4682B4;
+    color: #fff;
+    overflow: visible;
+    padding: 0 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  }
+  .logo {
+    width: 150px;
+    height: 60px;
+    position: relative;
+    margin-top: 20px;
+  }
+  .logo-info {
+    margin-left: 10px;
+  }
+  .mip-nav-wrapper {
+    margin-top: 24px;
+  }
+  mip-nav-slidedown #bs-navbar {
+    max-height: 122px;
+    left: auto !important;
+    right: 0 !important;
+    width: 130px !important;
+    background: #4682B4 !important;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  mip-nav-slidedown #bs-navbar .navbar-nav li {
+    border-bottom: 1px solid #ccc;
+  }
+  mip-nav-slidedown #bs-navbar .navbar-nav li a {
+    color: #fff !important;
+  }
+  .mip-nav-wrapper .navbar-toggle .icon-bar {
+    background: #fff !important;
+  }
+  /* freenovel */
+  .freenovel {
+    padding-top: 100px;
+  }
+  .freenovel-pic {
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  </style>
+</head>
+<body>
+<!-- 正文 -->
+<!-- nav -->
+<mip-fixed type="top">
+  <div class="logo fl">
+    <mip-img
+      layout="fill" 
+      src="https://www.mipengine.org/static/img/sample_01.jpg">
+    </mip-img>
+  </div>
+  <span class="logo-info fl">专注missup</span>
+  <div class="mip-nav-wrapper fr">
+    <mip-nav-slidedown
+      data-id="bs-navbar"
+      class="mip-element-sidebar container"
+      data-showbrand="1">
+      <nav id="bs-navbar" class="navbar-collapse collapse navbar navbar-static-top">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="//www.mipengine.org/">free novel</a>
+          </li>
+          <li>
+            <a href="//www.mipengine.org/timeline.html">game news</a>
+          </li>
+        </ul>
+      </nav>
+    </mip-nav-slidedown>
+  </div>
+</mip-fixed>
+<!-- free novel -->
+<div class="freenovel">
+  <div class="index-title"><span></span>free novel</div>
+  <div class="freenovel-pic">
+    <mip-carousel 
+      autoplay
+      defer="4000" 
+      layout="fill" 
+      indicator 
+      buttonController>
+      <a target="_blank" href="http://wenda.tianya.cn/m/question/1almfj0foas94gc7vtoq6ejbfbmdk3e78ehaa">
+        <mip-img 
+            src="https://www.mipengine.org/static/img/sample_01.jpg">
+        </mip-img>
+        <div class="mip-carousle-subtitle">这里是title1</div>
+      </a>
+      <a target="_blank" href="http://wenda.tianya.cn/m/question/1almfj0foas94gc7vtoq6ejbfbmdk3e78ehaa">
+          <mip-img 
+              src="https://www.mipengine.org/static/img/sample_02.jpg" width="600" height="400">
+          </mip-img>
+          <div class="mip-carousle-subtitle">这里是title2</div>
+      </a>
+      <a target="_blank" href="http://wenda.tianya.cn/m/question/1almfj0foas94gc7vtoq6ejbfbmdk3e78ehaa">
+        <mip-img 
+            src="https://www.mipengine.org/static/img/sample_03.jpg">
+        </mip-img>
+        <div class="mip-carousle-subtitle">这里是title3</div>
+      </a>
+    </mip-carousel>
+  </div>
+</div>
+
+<script src="https://mipcache.bdstatic.com/static/v1/mip.js"></script>
+<script src="https://mipcache.bdstatic.com/static/v1/mip-fixed/mip-fixed.js"></script>
+<script src="https://mipcache.bdstatic.com/static/v1/mip-nav-slidedown/mip-nav-slidedown.js"></script>
+</body>
+</html>
